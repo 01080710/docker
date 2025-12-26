@@ -1,0 +1,31 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_express
+    # hostname: sql_express
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=peterrex01080710  # 請替換 <password> 為你想要設定的 SA 密碼
+    ports:
+      - "1433:1433"  # 映射 SQL Server 的 1433 埠
+    restart: unless-stopped  # 容器停止後自動重新啟動
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8080:8080"  # 映射 Adminer 的 8080 埠
+    restart: unless-stopped
+
+volumes:
+  sql_data:  # 定義數據卷以儲存資料
+
+
+
+# 項目	值
+# 帳號	sa（SQL Server 的預設管理員帳號）
+# 密碼	YourStrong!Passw0rd（就是你在 SA_PASSWORD 設定的）
+# Server	localhost（如果你是從主機端連接）
+# sqlserver-express（如果是從 Adminer 容器內連接）
+# Port	1433
+# 資料庫	預設是沒有的，你需要連進去後自己建立

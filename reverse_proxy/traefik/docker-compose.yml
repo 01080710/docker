@@ -1,0 +1,43 @@
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: always
+    command:
+      # 啟用 API 與 Dashboard
+      - "--api.dashboard=true"
+      - "--api.insecure=false"  # 允許未加密存取 Dashboard（生產環境請關閉）
+
+      # 啟用 Docker 提供者，讓 Traefik 自動偵測服務
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"  # 避免所有容器預設公開
+
+      # 定義 HTTP 與 HTTPS 入口點
+      - "--entrypoints.web.address=:80"    # HTTP 入口點
+      - "--entrypoints.websecure.address=:443"  # HTTPS 入口點
+
+      # 啟用 Let's Encrypt 來自動申請 SSL（請用自己的 email）
+      - "--certificatesresolvers.myresolver.acme.email=zxcvbnm951654@kimo.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+
+      # 記錄等級
+      - "--log.level=INFO"  # INFO / DEBUG / ERROR
+      - "--accesslog=true"  # 記錄存取日誌
+
+    ports:
+      - "8081:80"    # HTTP
+      - "443:443"  # HTTPS
+      - "8080:8080"  # Traefik Dashboard
+
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"  # 允許讀取 Docker 服務
+      - "./letsencrypt:/letsencrypt"  # 存儲 SSL 憑證
+    networks:
+      - iTaiwan
+
+  
+
+networks:
+  iTaiwan:
+    driver: bridge

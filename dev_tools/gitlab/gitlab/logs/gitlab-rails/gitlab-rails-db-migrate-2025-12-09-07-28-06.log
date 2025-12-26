@@ -1,0 +1,20 @@
+Skipping Topology Service health check due to the cell being disabled
+Running db:schema:load rake task
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:9: NOTICE:  extension "btree_gist" already exists, skipping
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:11: NOTICE:  extension "pg_trgm" already exists, skipping
+Skipping altering cell sequences range due to the cell being disabled
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/001_application_settings.rb
+Creating the default ApplicationSetting record.
+== /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/001_application_settings.rb took 2.35 seconds
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/002_default_organization.rb
+
+OK
+== /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/002_default_organization.rb took 0.05 seconds
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/003_admin.rb
+Could not create the default administrator account:
+
+--> Password must not contain commonly used combinations of words and letters
+

@@ -1,0 +1,42 @@
+2025-12-10_01:52:28.28861 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-12-10_01:52:28.30988 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-12-10_01:52:28.42192 FATAL:  the database system is starting up
+2025-12-10_01:52:28.42319 LOG:  database system shutdown was interrupted; last known up at 2025-12-10 01:51:46 GMT
+2025-12-10_01:52:33.43873 FATAL:  the database system is starting up
+2025-12-10_01:52:38.42813 LOG:  syncing data directory (pre-fsync), elapsed time: 10.00 s, current path: ./base/16386/46265
+2025-12-10_01:52:38.45070 FATAL:  the database system is starting up
+2025-12-10_01:52:43.47350 FATAL:  the database system is starting up
+2025-12-10_01:52:48.49802 FATAL:  the database system is starting up
+2025-12-10_01:52:50.85645 LOG:  syncing data directory (fsync), elapsed time: 10.00 s, current path: ./base/16386/23556
+2025-12-10_01:52:53.51144 FATAL:  the database system is starting up
+2025-12-10_01:52:58.53489 FATAL:  the database system is starting up
+2025-12-10_01:53:00.85735 LOG:  syncing data directory (fsync), elapsed time: 20.00 s, current path: ./base/16386/30141
+2025-12-10_01:53:03.55775 FATAL:  the database system is starting up
+2025-12-10_01:53:08.56769 FATAL:  the database system is starting up
+2025-12-10_01:53:10.85491 LOG:  syncing data directory (fsync), elapsed time: 30.00 s, current path: ./base/16386/33893
+2025-12-10_01:53:13.59037 FATAL:  the database system is starting up
+2025-12-10_01:53:18.60991 FATAL:  the database system is starting up
+2025-12-10_01:53:20.85642 LOG:  syncing data directory (fsync), elapsed time: 40.00 s, current path: ./base/16386/49690
+2025-12-10_01:53:23.62968 FATAL:  the database system is starting up
+2025-12-10_01:53:25.20621 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-10_01:53:25.25420 LOG:  redo starts at 0/14DF1F8
+2025-12-10_01:53:28.65134 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:28.65157 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:33.67088 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:33.67134 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:35.25491 LOG:  redo in progress, elapsed time: 10.00 s, current LSN: 0/429C140
+2025-12-10_01:53:38.67937 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:38.67987 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:43.69261 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:43.69295 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:45.25508 LOG:  redo in progress, elapsed time: 20.00 s, current LSN: 0/73B5970
+2025-12-10_01:53:48.71366 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:48.71399 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:51.42005 LOG:  invalid record length at 0/9FD6920: expected at least 24, got 0
+2025-12-10_01:53:51.42027 LOG:  redo done at 0/9FD68E0 system usage: CPU: user: 0.64 s, system: 0.99 s, elapsed: 26.16 s
+2025-12-10_01:53:53.74442 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:53.74710 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:53:58.77360 FATAL:  the database system is not accepting connections
+2025-12-10_01:53:58.77481 DETAIL:  Hot standby mode is disabled.
+2025-12-10_01:54:03.80303 FATAL:  the database system is not accepting connections
+2025-12-10_01:54:03.80370 DETAIL:  Hot standby mode is disabled.

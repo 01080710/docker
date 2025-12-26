@@ -1,0 +1,32 @@
+2025-12-10_00:53:10.08087 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-12-10_00:53:10.11448 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-12-10_00:53:10.22360 LOG:  database system shutdown was interrupted; last known up at 2025-12-10 00:50:13 GMT
+2025-12-10_00:53:12.37645 FATAL:  the database system is starting up
+2025-12-10_00:53:17.39881 FATAL:  the database system is starting up
+2025-12-10_00:53:20.24009 LOG:  syncing data directory (pre-fsync), elapsed time: 10.01 s, current path: ./base/16386/20585
+2025-12-10_00:53:22.40892 FATAL:  the database system is starting up
+2025-12-10_00:53:27.42763 FATAL:  the database system is starting up
+2025-12-10_00:53:30.24447 LOG:  syncing data directory (pre-fsync), elapsed time: 20.01 s, current path: ./base/16386/24009
+2025-12-10_00:53:32.44826 FATAL:  the database system is starting up
+2025-12-10_00:53:37.46989 FATAL:  the database system is starting up
+2025-12-10_00:53:40.23430 LOG:  syncing data directory (pre-fsync), elapsed time: 30.00 s, current path: ./base/16386/26572
+2025-12-10_00:53:42.48946 FATAL:  the database system is starting up
+2025-12-10_00:53:47.50977 FATAL:  the database system is starting up
+2025-12-10_00:53:50.23898 LOG:  syncing data directory (pre-fsync), elapsed time: 40.01 s, current path: ./base/16386/29371
+2025-12-10_00:53:52.53294 FATAL:  the database system is starting up
+2025-12-10_00:53:57.54342 FATAL:  the database system is starting up
+2025-12-10_00:54:00.22822 LOG:  syncing data directory (pre-fsync), elapsed time: 50.00 s, current path: ./base/16386/31791
+2025-12-10_00:54:02.57252 FATAL:  the database system is starting up
+2025-12-10_00:54:07.59664 FATAL:  the database system is starting up
+2025-12-10_00:54:10.23344 LOG:  syncing data directory (pre-fsync), elapsed time: 60.00 s, current path: ./base/16386/35281
+2025-12-10_00:54:12.62575 FATAL:  the database system is starting up
+2025-12-10_00:54:17.64253 FATAL:  the database system is starting up
+2025-12-10_00:54:20.24729 LOG:  syncing data directory (pre-fsync), elapsed time: 70.01 s, current path: ./base/16386/46386
+2025-12-10_00:54:22.66667 FATAL:  the database system is starting up
+2025-12-10_00:54:27.68933 FATAL:  the database system is starting up
+2025-12-10_00:54:30.22824 LOG:  syncing data directory (pre-fsync), elapsed time: 80.00 s, current path: ./base/16386/48543
+2025-12-10_00:54:32.71142 FATAL:  the database system is starting up
+2025-12-10_00:54:37.73538 FATAL:  the database system is starting up
+2025-12-10_00:54:40.22979 LOG:  syncing data directory (pre-fsync), elapsed time: 90.00 s, current path: ./base/17126/5002
+2025-12-10_00:54:42.74811 FATAL:  the database system is starting up
+2025-12-10_00:54:47.77684 FATAL:  the database system is starting up

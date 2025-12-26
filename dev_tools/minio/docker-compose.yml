@@ -1,0 +1,11 @@
+services:
+  minio:
+      image: minio/minio:latest
+      container_name: minio
+      ports:
+        - "9090:9000" # 這是 S3 API port
+        - "9001:9001" # 這是 Web UI port
+      environment:
+        MINIO_ACCESS_KEY: minioadmin
+        MINIO_SECRET_KEY: minioadmin
+      command: server /data --console-address ":9001"

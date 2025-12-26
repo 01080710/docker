@@ -1,0 +1,26 @@
+# 啟動一個 Keycloak 容器，它是一個開源身份與存取管理（IAM）解決方案，用於處理登入、註冊、OAuth、OpenID Connect 等。
+# default account: user /password: bitnami
+services:
+  postgresql:
+    image: docker.io/bitnami/postgresql:latest
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - POSTGRESQL_USERNAME=bn_keycloak
+      - POSTGRESQL_DATABASE=bitnami_keycloak
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+  keycloak:
+    image: docker.io/bitnami/keycloak:latest
+    ports:
+      - "8081:8080"
+    environment:
+      - KEYCLOAK_CREATE_ADMIN_USER=true
+      - KEYCLOAK_ADMIN= chikai
+      - KEYCLOAK_ADMIN_PASSWORD= chikai0124
+    depends_on:
+      - postgresql
+    volumes:
+      - './mynewtheme:/opt/bitnami/keycloak/themes/mynewtheme'
+volumes:
+  postgresql_data:
+    driver: local

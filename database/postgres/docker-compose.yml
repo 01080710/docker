@@ -1,0 +1,45 @@
+services:
+  postgres:
+    image: postgres
+    container_name: chikai_postgres
+    environment:
+      POSTGRES_USER: root  # PostgreSQL 用戶
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  # 用戶密碼
+      POSTGRES_DB: postgres # 初始化資料庫名稱
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # 資料持久化
+    ports:
+      - "5432:5432"  # 將 PostgreSQL 端口暴露出來
+    networks:
+      - mynetwork
+
+  phppgadmin:
+    image: dpage/pgadmin4  # 使用官方 pgAdmin4 映像
+    container_name: chikai_phppgadmin
+    environment:
+      PGSQL_SERVER: postgres  # 這裡是 PostgreSQL 容器的名稱
+      PGSQL_PORT: 5432
+      PGSQL_USER: root  # PostgreSQL 用戶名
+      PGSQL_DB: postgres  # PostgreSQL 用戶名
+      PGSQL_PASSWORD: peterrex01080710  # PostgreSQL 密碼
+      PGADMIN_DEFAULT_EMAIL: zxcvbnm951654@kimo.com  # 設定 pgAdmin 登入郵箱
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}   # 設定 pgAdmin 登入密碼
+    # 雲端雖方便但頻繁寫入會造成網路延遲或IO等等狀態，無法達到迅速
+    # volumes:
+    #   - G:/我的雲端硬碟/docker/pgadmin-data:/var/lib/pgadmin  # 資料持久化
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin  # 資料持久化
+    ports:
+      - "5050:80"  # 將 pgAdmin4 的 Web UI 端口暴露出來
+    networks:
+      - mynetwork
+    depends_on:
+      - postgres
+
+volumes:
+  postgres-data:  # 使用 Docker 卷來持久化資料
+  pgadmin-data:
+
+networks:
+  mynetwork:
+    driver: bridge

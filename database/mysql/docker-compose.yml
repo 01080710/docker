@@ -1,0 +1,30 @@
+services:
+  mysql:
+    image: mysql
+    container_name: chikai_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD : peterrex01080710
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: chikai_phpmyadmin
+    environment:
+      PMA_HOST : mysql
+      PMA_USER : root
+      PMA_PASSWORD : peterrex01080710
+    ports:
+      - "8080:80"
+    networks:
+      - mynetwork
+    depends_on:
+      - mysql
+volumes:
+  mysql-data:
+networks:
+  mynetwork:
+    driver: bridge

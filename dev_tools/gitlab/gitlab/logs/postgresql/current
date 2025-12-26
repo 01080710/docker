@@ -1,0 +1,14 @@
+2025-12-10_02:01:13.72688 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-12-10_02:01:13.75583 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-12-10_02:01:13.90786 LOG:  database system was interrupted while in recovery at 2025-12-10 02:00:28 GMT
+2025-12-10_02:01:13.90821 HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+2025-12-10_02:01:15.67080 FATAL:  the database system is starting up
+2025-12-10_02:01:20.69465 FATAL:  the database system is starting up
+2025-12-10_02:01:23.91835 LOG:  syncing data directory (pre-fsync), elapsed time: 10.00 s, current path: ./base/16386/49500
+2025-12-10_02:01:25.71841 FATAL:  the database system is starting up
+2025-12-10_02:01:30.73353 FATAL:  the database system is starting up
+2025-12-10_02:01:34.77975 LOG:  syncing data directory (fsync), elapsed time: 10.00 s, current path: ./base/16386/2610
+2025-12-10_02:01:35.75654 FATAL:  the database system is starting up
+2025-12-10_02:01:40.79274 FATAL:  the database system is starting up
+2025-12-10_02:01:44.78694 LOG:  syncing data directory (fsync), elapsed time: 20.01 s, current path: ./base/16386/32005
+2025-12-10_02:01:45.82421 FATAL:  the database system is starting up

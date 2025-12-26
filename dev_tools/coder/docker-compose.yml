@@ -1,0 +1,61 @@
+services:
+  # 🔁 Nginx Proxy：自動根據容器的 VIRTUAL_HOST 設定反向代理
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "8088:80"     # 對外開放 HTTP
+      - "4443:443"   # 對外開放 HTTPS
+    volumes:
+      # 掛載 Docker socket，讓 nginx-proxy 可以監聽其他容器的變化
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      # 憑證儲存位置
+      - ./certs:/etc/nginx/certs
+      # 每個網站虛擬主機設定
+      - ./vhost.d:/etc/nginx/vhost.d
+      # 預設的靜態資源頁面
+      - ./html:/usr/share/nginx/html
+
+  # 🔒 Let's Encrypt Companion：自動申請與續期 SSL 憑證
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: nginx-letsencrypt
+    restart: always
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy  # 告訴 companion 要接哪個 nginx-proxy
+      - DEFAULT_EMAIL=zxcvbnm951654@kimo.com      # 憑證過期通知用的 Email（請改成你自己的）
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./certs:/etc/nginx/certs
+      - ./vhost.d:/etc/nginx/vhost.d
+      - ./html:/usr/share/nginx/html
+
+  # 💻 code-server 容器：將 VS Code 服務化、加密、提供遠端存取
+  code-server:
+    image: codercom/code-server:latest
+    container_name: code-server
+    restart: always
+    user: root           # 使用 root 避免權限問題（注意安全性）
+    privileged: true     # 啟用容器的完全權限（可選）
+    environment:
+      - PASSWORD=123456                        # 登入 code-server 時的密碼（請改掉）
+      - VIRTUAL_HOST=yourdomain.com           # 提供給 nginx-proxy 使用的主機名稱
+      - LETSENCRYPT_HOST=yourdomain.com       # 指定申請憑證的網域
+      - LETSENCRYPT_EMAIL=zxcvbnm951654@kimo.com     # 憑證通知 Email（要改成你自己的）
+    volumes:
+      - ./code:/home/code   # 將容器中的專案目錄對應到本機 ./code 資料夾
+    expose:
+      - "8080"               # 對 nginx-proxy 開放內部 port，不對外直接開放
+
+
+# dev_tools/
+# └── code-server-ssl/
+#     ├── docker-compose.yml
+#     ├── code/        ← 存放你開發的程式或資料
+#     ├── certs/       ← 自動產生 SSL 憑證
+#     ├── html/        ← Nginx 預設頁面
+#     └── vhost.d/     ← 每個虛擬主機的設定
+
+# ✅ 解法：用 nginx-proxy + letsencrypt-nginx-proxy-companion 搭配 code-server
+# 這是業界常用的一組 Docker 套件組合，可達成你要的全自動 HTTPS proxy。

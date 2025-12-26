@@ -1,0 +1,40 @@
+2025-12-10_00:57:52.67150 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-12-10_00:57:52.68564 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-12-10_00:57:52.79232 LOG:  database system was interrupted while in recovery at 2025-12-10 00:56:52 GMT
+2025-12-10_00:57:52.79260 HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+2025-12-10_00:57:54.22573 FATAL:  the database system is starting up
+2025-12-10_00:57:59.25156 FATAL:  the database system is starting up
+2025-12-10_00:58:02.79939 LOG:  syncing data directory (pre-fsync), elapsed time: 10.00 s, current path: ./base/16386/4146
+2025-12-10_00:58:04.27475 FATAL:  the database system is starting up
+2025-12-10_00:58:09.29070 FATAL:  the database system is starting up
+2025-12-10_00:58:14.31266 FATAL:  the database system is starting up
+2025-12-10_00:58:15.49270 LOG:  syncing data directory (fsync), elapsed time: 10.13 s, current path: ./base/16386/21642
+2025-12-10_00:58:19.33470 FATAL:  the database system is starting up
+2025-12-10_00:58:24.35374 FATAL:  the database system is starting up
+2025-12-10_00:58:25.36271 LOG:  syncing data directory (fsync), elapsed time: 20.00 s, current path: ./base/16386/25241
+2025-12-10_00:58:29.37987 FATAL:  the database system is starting up
+2025-12-10_00:58:34.40404 FATAL:  the database system is starting up
+2025-12-10_00:58:35.36519 LOG:  syncing data directory (fsync), elapsed time: 30.00 s, current path: ./base/16386/3079
+2025-12-10_00:58:39.42657 FATAL:  the database system is starting up
+2025-12-10_00:58:44.44894 FATAL:  the database system is starting up
+2025-12-10_00:58:45.36329 LOG:  syncing data directory (fsync), elapsed time: 40.00 s, current path: ./base/16386/33348
+2025-12-10_00:58:49.47126 FATAL:  the database system is starting up
+2025-12-10_00:58:54.49353 FATAL:  the database system is starting up
+2025-12-10_00:58:55.36361 LOG:  syncing data directory (fsync), elapsed time: 50.00 s, current path: ./base/16386/4165
+2025-12-10_00:58:59.51699 FATAL:  the database system is starting up
+2025-12-10_00:59:04.54379 FATAL:  the database system is starting up
+2025-12-10_00:59:05.36510 LOG:  syncing data directory (fsync), elapsed time: 60.00 s, current path: ./base/4/2663
+2025-12-10_00:59:07.67291 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-10_00:59:07.74099 LOG:  redo starts at 0/14DF1F8
+2025-12-10_00:59:09.56947 FATAL:  the database system is not accepting connections
+2025-12-10_00:59:09.57011 DETAIL:  Hot standby mode is disabled.
+2025-12-10_00:59:14.59344 FATAL:  the database system is not accepting connections
+2025-12-10_00:59:14.59369 DETAIL:  Hot standby mode is disabled.
+2025-12-10_00:59:17.74111 LOG:  redo in progress, elapsed time: 10.00 s, current LSN: 0/3E914B8
+2025-12-10_00:59:19.61888 FATAL:  the database system is not accepting connections
+2025-12-10_00:59:19.61935 DETAIL:  Hot standby mode is disabled.
+2025-12-10_00:59:24.64336 FATAL:  the database system is not accepting connections
+2025-12-10_00:59:24.64361 DETAIL:  Hot standby mode is disabled.
+2025-12-10_00:59:27.74134 LOG:  redo in progress, elapsed time: 20.00 s, current LSN: 0/483AEE0
+2025-12-10_00:59:29.66912 FATAL:  the database system is not accepting connections
+2025-12-10_00:59:29.66941 DETAIL:  Hot standby mode is disabled.

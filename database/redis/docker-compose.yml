@@ -1,0 +1,21 @@
+services:
+  redis-stack:
+    image: redis/redis-stack:latest  # 使用 Redis 服務的官方映像
+    container_name: redis-stack-container
+    ports:
+      - 6379:6379 # Redis 服務端口
+      - 8001:8001 # Redisinsight 服務端口
+    restart: always
+    volumes:
+      - redisinsight_data:/data  # 持久化 Redis 數據
+    networks:
+      - chikai_network
+
+
+volumes:
+  redisinsight_data:  # 用於 RedisInsight 配置的持久化
+
+networks:
+  chikai_network:
+    driver: bridge
+

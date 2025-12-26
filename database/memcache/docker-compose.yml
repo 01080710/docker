@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  memcached:
+    image: memcached:latest
+    container_name: memcached
+    ports:
+      - "11211:11211"
+    command: ["memcached", "-m", "256"]  # 指定 256MB 記憶體，可自行調整
+
+  cache-admin:
+    image: robinn/phpcacheadmin:latest
+    container_name: cache-admin
+    ports:
+      - "8080:80"
+    environment:
+      - PCA_MEMCACHED_0_HOST=memcached
+      - PCA_MEMCACHED_0_PORT=11211
+    depends_on:
+      - memcached
