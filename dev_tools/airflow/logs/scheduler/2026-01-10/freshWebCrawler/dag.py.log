@@ -1,0 +1,100 @@
+[2026-01-10T05:48:23.102+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:48:23.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T05:48:23.105+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:48:23.104+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:48:23.165+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:48:23.321+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:48:23.321+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T05:48:23.335+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:48:23.335+0000] {dag.py:3118} INFO - Creating ORM DAG for random_csv_report_dag_three_tasks
+[2026-01-10T05:48:23.352+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:48:23.352+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 05:47:00+00:00, run_after=2026-01-10 05:48:00+00:00
+[2026-01-10T05:48:23.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.292 seconds
+[2026-01-10T05:59:07.208+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:07.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T05:59:07.240+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:07.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:07.507+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:07.698+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:07.697+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T05:59:07.875+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:07.865+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 05:58:00+00:00, run_after=2026-01-10 05:59:00+00:00
+[2026-01-10T05:59:07.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.805 seconds
+[2026-01-10T05:59:38.463+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:38.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T05:59:38.466+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:38.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:38.511+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T05:59:38.553+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:38.552+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T05:59:38.584+0000] {logging_mixin.py:188} INFO - [2026-01-10T05:59:38.584+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 05:58:00+00:00, run_after=2026-01-10 05:59:00+00:00
+[2026-01-10T05:59:38.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.154 seconds
+[2026-01-10T06:00:08.761+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:08.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:00:08.764+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:08.764+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:08.811+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:08.858+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:08.858+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:00:08.890+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:08.890+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 05:59:00+00:00, run_after=2026-01-10 06:00:00+00:00
+[2026-01-10T06:00:08.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.175 seconds
+[2026-01-10T06:00:39.122+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:39.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:00:39.126+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:39.126+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:39.181+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:00:39.233+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:39.233+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:00:39.264+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:00:39.264+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 05:59:00+00:00, run_after=2026-01-10 06:00:00+00:00
+[2026-01-10T06:00:39.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.192 seconds
+[2026-01-10T06:01:09.635+0000] {processor.py:161} INFO - Started process (PID=104) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:09.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:01:09.640+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:09.639+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:09.683+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:09.748+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:09.748+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:01:09.784+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:09.784+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:00:00+00:00, run_after=2026-01-10 06:01:00+00:00
+[2026-01-10T06:01:09.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.195 seconds
+[2026-01-10T06:01:40.020+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:40.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:01:40.023+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:40.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:40.067+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:01:40.107+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:40.107+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:01:40.139+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:01:40.139+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:01:00+00:00, run_after=2026-01-10 06:02:00+00:00
+[2026-01-10T06:01:40.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.160 seconds
+[2026-01-10T06:02:10.557+0000] {processor.py:161} INFO - Started process (PID=106) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:10.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:02:10.561+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:10.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:10.613+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:10.659+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:10.659+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:02:10.691+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:10.691+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:01:00+00:00, run_after=2026-01-10 06:02:00+00:00
+[2026-01-10T06:02:10.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.171 seconds
+[2026-01-10T06:02:40.909+0000] {processor.py:161} INFO - Started process (PID=107) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:40.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:02:40.912+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:40.912+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:40.962+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:02:41.106+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:41.106+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:02:41.121+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:41.121+0000] {dag.py:3118} INFO - Creating ORM DAG for random_csv_report_dag_three_tasks
+[2026-01-10T06:02:41.137+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:02:41.137+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:01:00+00:00, run_after=2026-01-10 06:02:00+00:00
+[2026-01-10T06:02:41.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.272 seconds
+[2026-01-10T06:03:11.491+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:11.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:03:11.494+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:11.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:11.539+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:11.579+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:11.579+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:03:11.610+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:11.610+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:02:00+00:00, run_after=2026-01-10 06:03:00+00:00
+[2026-01-10T06:03:11.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.163 seconds
+[2026-01-10T06:03:41.870+0000] {processor.py:161} INFO - Started process (PID=109) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:41.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:03:41.872+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:41.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:41.917+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:03:41.958+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:41.958+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:03:41.990+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:03:41.990+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:02:00+00:00, run_after=2026-01-10 06:03:00+00:00
+[2026-01-10T06:03:42.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.177 seconds
+[2026-01-10T06:04:12.229+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:12.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:04:12.232+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:12.231+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:12.273+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:12.318+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:12.318+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:04:12.350+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:12.350+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:03:00+00:00, run_after=2026-01-10 06:04:00+00:00
+[2026-01-10T06:04:12.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.173 seconds
+[2026-01-10T06:04:42.588+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:42.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:04:42.591+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:42.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:42.632+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:04:42.677+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:42.677+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:04:42.708+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:04:42.708+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:03:00+00:00, run_after=2026-01-10 06:04:00+00:00
+[2026-01-10T06:04:42.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.163 seconds
+[2026-01-10T06:05:13.017+0000] {processor.py:161} INFO - Started process (PID=112) to work on /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:05:13.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshWebCrawler/dag.py for tasks to queue
+[2026-01-10T06:05:13.020+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:05:13.019+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:05:13.068+0000] {processor.py:840} INFO - DAG(s) 'random_csv_report_dag_three_tasks' retrieved from /opt/airflow/dags/freshWebCrawler/dag.py
+[2026-01-10T06:05:13.111+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:05:13.111+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-10T06:05:13.142+0000] {logging_mixin.py:188} INFO - [2026-01-10T06:05:13.142+0000] {dag.py:3954} INFO - Setting next_dagrun for random_csv_report_dag_three_tasks to 2026-01-10 06:04:00+00:00, run_after=2026-01-10 06:05:00+00:00
+[2026-01-10T06:05:13.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshWebCrawler/dag.py took 0.176 seconds

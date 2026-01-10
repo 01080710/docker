@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:latest
+    image: postgres:17
     container_name: record_gitea_data
     environment:
       POSTGRES_USER: root  # PostgreSQL 用戶

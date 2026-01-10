@@ -11,10 +11,12 @@ x-airflow-common: &airflow-common
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     _PIP_ADDITIONAL_REQUIREMENTS: ""
+    AIRFLOW__CORE__MIN_FILE_PROCESS_INTERVAL: 10  # 每 10 秒掃描 DAG
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
+    -  C:/Users/88696/Desktop/airflow-data:/opt/airflow/data  # 新增這行
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     postgres:
