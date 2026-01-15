@@ -1,0 +1,6 @@
+groups:
+  - name: example
+    rules:
+    - alert: HighCpuUsage
+      expr: container_cpu_usage_seconds_total > 0.8
+      for: 1m

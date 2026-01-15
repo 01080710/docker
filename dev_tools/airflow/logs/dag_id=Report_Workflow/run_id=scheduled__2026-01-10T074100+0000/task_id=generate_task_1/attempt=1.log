@@ -1,0 +1,21 @@
+[2026-01-10T07:42:01.453+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-10T07:42:01.488+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Report_Workflow.generate_task_1 scheduled__2026-01-10T07:41:00+00:00 [queued]>
+[2026-01-10T07:42:01.499+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Report_Workflow.generate_task_1 scheduled__2026-01-10T07:41:00+00:00 [queued]>
+[2026-01-10T07:42:01.508+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-10T07:42:01.527+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_task_1> on 2026-01-10 07:41:00+00:00
+[2026-01-10T07:42:01.535+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=228) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-10T07:42:01.540+0000] {standard_task_runner.py:63} INFO - Started process 229 to run task
+[2026-01-10T07:42:01.538+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Report_Workflow', 'generate_task_1', 'scheduled__2026-01-10T07:41:00+00:00', '--job-id', '224', '--raw', '--subdir', 'DAGS_FOLDER/report_project/report_dag.py', '--cfg-path', '/tmp/tmp9qrmqm3z']
+[2026-01-10T07:42:01.541+0000] {standard_task_runner.py:91} INFO - Job 224: Subtask generate_task_1
+[2026-01-10T07:42:01.656+0000] {task_command.py:426} INFO - Running <TaskInstance: Report_Workflow.generate_task_1 scheduled__2026-01-10T07:41:00+00:00 [running]> on host 3c983484a053
+[2026-01-10T07:42:01.839+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Vantage' AIRFLOW_CTX_DAG_ID='Report_Workflow' AIRFLOW_CTX_TASK_ID='generate_task_1' AIRFLOW_CTX_EXECUTION_DATE='2026-01-10T07:41:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-10T07:41:00+00:00'
+[2026-01-10T07:42:01.841+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-10T07:42:01.862+0000] {logging_mixin.py:188} INFO - Successfully generated: /opt/***/data/report_v1_20260110_074100.csv
+[2026-01-10T07:42:01.863+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/report_v1_20260110_074100.csv
+[2026-01-10T07:42:01.864+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-10T07:42:01.905+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Report_Workflow, task_id=generate_task_1, run_id=scheduled__2026-01-10T07:41:00+00:00, execution_date=20260110T074100, start_date=20260110T074201, end_date=20260110T074201
+[2026-01-10T07:42:01.957+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-10T07:42:01.995+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-10T07:42:02.004+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

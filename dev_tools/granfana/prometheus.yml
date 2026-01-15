@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'docker-containers'
+    static_configs:
+      # 關鍵：這裡使用容器名稱代替 IP
+      - targets: ['cadvisor:8080']
