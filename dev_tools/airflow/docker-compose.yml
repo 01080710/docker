@@ -16,8 +16,9 @@ x-airflow-common: &airflow-common
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    -  C:/Users/88696/Desktop/airflow-data:/opt/airflow/data  # 新增這行
-  user: "${AIRFLOW_UID:-50000}:0"
+    -  C:/Users/88696/Desktop/airflow-data:/opt/airflow/data  # host → container
+    -  /var/run/docker.sock:/var/run/docker.sock              # DockerOperator 必須
+  user: "0:0" 
   depends_on:
     postgres:
       condition: service_healthy

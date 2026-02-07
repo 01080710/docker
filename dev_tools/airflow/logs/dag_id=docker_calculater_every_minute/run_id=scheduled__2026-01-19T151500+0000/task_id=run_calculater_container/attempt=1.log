@@ -1,0 +1,21 @@
+[2026-01-19T15:16:01.964+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-19T15:16:02.012+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_calculater_every_minute.run_calculater_container scheduled__2026-01-19T15:15:00+00:00 [queued]>
+[2026-01-19T15:16:02.025+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_calculater_every_minute.run_calculater_container scheduled__2026-01-19T15:15:00+00:00 [queued]>
+[2026-01-19T15:16:02.033+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-01-19T15:16:02.057+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_calculater_container> on 2026-01-19 15:15:00+00:00
+[2026-01-19T15:16:02.066+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=52) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-19T15:16:02.069+0000] {standard_task_runner.py:63} INFO - Started process 53 to run task
+[2026-01-19T15:16:02.069+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'docker_calculater_every_minute', 'run_calculater_container', 'scheduled__2026-01-19T15:15:00+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/report_project/report_dag.py', '--cfg-path', '/tmp/tmpb8i4tb65']
+[2026-01-19T15:16:02.071+0000] {standard_task_runner.py:91} INFO - Job 266: Subtask run_calculater_container
+[2026-01-19T15:16:02.202+0000] {task_command.py:426} INFO - Running <TaskInstance: docker_calculater_every_minute.run_calculater_container scheduled__2026-01-19T15:15:00+00:00 [running]> on host b1c5b70b0097
+[2026-01-19T15:16:02.408+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker_calculater_every_minute' AIRFLOW_CTX_TASK_ID='run_calculater_container' AIRFLOW_CTX_EXECUTION_DATE='2026-01-19T15:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-19T15:15:00+00:00'
+[2026-01-19T15:16:02.410+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-19T15:16:02.491+0000] {docker.py:366} INFO - Starting docker container from image calculater:latest
+[2026-01-19T15:16:03.251+0000] {docker.py:436} INFO - Successfully generated: /opt/***/data/test_20260119151603.csv
+[2026-01-19T15:16:03.582+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-19T15:16:03.650+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=docker_calculater_every_minute, task_id=run_calculater_container, run_id=scheduled__2026-01-19T15:15:00+00:00, execution_date=20260119T151500, start_date=20260119T151602, end_date=20260119T151603
+[2026-01-19T15:16:03.696+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-19T15:16:03.745+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-19T15:16:03.755+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
