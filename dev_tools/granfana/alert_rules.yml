@@ -1,0 +1,12 @@
+groups:
+  - name: example
+    rules:
+      - alert: HighCpuUsage
+        # 使用 rate() 計算過去 1 分鐘 CPU 使用率
+        expr: rate(container_cpu_usage_seconds_total[1m]) > 0.8
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "🚨 高 CPU 使用率告警"
+          description: "容器 CPU 使用率超過 80%，請檢查服務運行狀態"

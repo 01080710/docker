@@ -1,0 +1,12 @@
+route:
+  receiver: 'default-receiver'
+  group_wait: 10s
+  group_interval: 30s
+  repeat_interval: 1h
+
+receivers:
+  - name: 'default-receiver'
+    # 測試可以先用 console 打印
+    # 之後可以改成 email / Slack / webhook
+    webhook_configs:
+      - url: 'http://localhost:5001/'  # 測試用可用簡單 webhook
