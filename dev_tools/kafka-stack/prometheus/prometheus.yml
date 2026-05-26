@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets:
+          - "prometheus:9090"
+
+  - job_name: "kafka-exporter"
+    static_configs:
+      - targets:
+          - "kafka-exporter:9308"
+        labels:
+          service: "kafka"
+          env: "local"
+
+  # 之後如果你有 Python Consumer / Poller expose /metrics，可以打開這段
+  # - job_name: "api-monitor"
+  #   static_configs:
+  #     - targets:
+  #         - "api-monitor:8000"
